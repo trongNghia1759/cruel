@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruel-Caption</title>
+    <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body và nền */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('bgr1.png'); /* Thay link ảnh ở đây */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #d1d1d1;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Khối nội dung chính với hiệu ứng mờ trong suốt */
+        .container {
+            background-color: rgba(18, 18, 18, 0.5); /* Nền đen mờ nhẹ */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #b5b5b5;
+            font-size: 2.5em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 35px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            padding: 12px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #555;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #555;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        /* Responsive cho thiết bị nhỏ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            .button {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 0.95em;
+            }
+
+            .button {
+                width: 100%;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cruel-Caption</h1>
+        <p>Có những vết thương chẳng thể nào lành, chỉ có thể cất giữ trong lòng rồi biến thành những câu chữ. 
+        Hãy để những nỗi niềm ấy được thốt ra bằng những caption hay và ý nghĩa.<br><br>
+        Caption của bạn sẽ được chọn lọc và đăng tải trên TikTok của chúng tôi.</p>
+     
+        <div class="button-group">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSflAriLrkagqYlGZg-qS53IlEA6Xyn1jzWJvft6bVl1Sws22g/viewform?usp=header" class="button" target="_blank">✍️ Nơi Viết Caption</a>
+            <a href="https://vm.tiktok.com/ZSHW8sjQ68aUM-c0XWd/" class="button" target="_blank">🎬 TikTok</a>
+        </div>
+
+        <h1 style="margin-top: 40px;">Liên Hệ Quảng Cáo</h1>
+        <div class="button-group">
+            <a href="https://www.facebook.com/dangcuong1411" class="button" target="_blank">FB: Đặng Cường</a>
+            <a href="https://www.facebook.com/profile.php?id=61576009787673" class="button" target="_blank">FB: Đàm Trọng Nghĩa</a>
+            <a href="https://www.facebook.com/profile.php?id=61566565132466" class="button" target="_blank">FB: Kim Ngân</a>
+        </div>
+    </div>
+
+</body>
+</html>
